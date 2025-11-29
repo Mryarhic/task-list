@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Tasks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>My Task List</h1>
+    <p id="date">Today: December 1, 2024</p>
+
+    <h2>Tasks to do:</h2>
+    <ul>
+        <li>Something</li>
+        <li>Something</li>
+        <li>Something</li>
+        <li>Something</li>
+        <li>Something</li>
+    </ul>
+
+    <h2>My Goals:</h2>
+    <ul>
+        <li>Something</li>
+        <li>Something</li>
+        <li>Something</li>
+        <li>Something</li>
+    </ul>
+
+    <script>
+        var today = new Date();
+        var day = today.getDate();
+        var month = today.getMonth() + 1;
+        var year = today.getFullYear();
+        
+        document.getElementById("date").innerHTML = "Today: " + month + "/" + day + "/" + year;
+    </script>
+</body>
+</html>
